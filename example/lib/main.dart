@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget {
 }
 
 class ThumbnailRequest {
-  final String video;
-  final String thumbnailPath;
-  final ImageFormat imageFormat;
-  final int maxHeight;
-  final int maxWidth;
-  final int timeMs;
-  final int quality;
+  final String? video;
+  final String? thumbnailPath;
+  final ImageFormat? imageFormat;
+  final int? maxHeight;
+  final int? maxWidth;
+  final int? timeMs;
+  final int? quality;
 
   const ThumbnailRequest(
       {this.video,
@@ -39,10 +39,10 @@ class ThumbnailRequest {
 }
 
 class ThumbnailResult {
-  final Image image;
-  final int dataSize;
-  final int height;
-  final int width;
+  final Image? image;
+  final int? dataSize;
+  final int? height;
+  final int? width;
   const ThumbnailResult({this.image, this.dataSize, this.height, this.width});
 }
 
